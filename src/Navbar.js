@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Snapper from './Snapper';
 import './Navbar.css'
 
 const styles = {
@@ -12,6 +13,10 @@ const styles = {
     width: 1000,
     marginLeft: 'auto',
     marginRight: 'auto'
+  },
+  businessLinks: {
+    position: 'relative',
+    padding: 25
   }
 };
 
@@ -21,7 +26,7 @@ export default class Navbar extends Component {
       <div className="navbar" style={styles.navbar}>
         <div className="nav-content" style={styles.navContent}>
           <div className="nav-brand">
-            <h1>Iw</h1>
+            <Snapper />
           </div>
           <ul className="nav-menu" style={styles.businessLinks}>
             <li><a href="http://github.com/iwilsonq">Git</a></li>

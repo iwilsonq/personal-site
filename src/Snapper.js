@@ -6,8 +6,8 @@ const me3 = '../public/imgs/me3.jpg';
 
 const styles = {
   snapper: {
-    height: 80,
-    width: 80,
+    height: 60,
+    width: 60,
     borderRadius: '50%'
   }
 }
