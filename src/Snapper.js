@@ -33,7 +33,7 @@ export default class Snapper extends Component {
 
     return (
       <div className="snapper" >
-        {this.renderSnap(id)}
+        {this.renderSnap(1)}
       </div>
     );
   }
