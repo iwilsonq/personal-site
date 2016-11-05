@@ -4,7 +4,6 @@ import './navbar.sass'
 
 const styles = {
   navbar: {
-    position: 'fixed',
     width: '100%',
     height: 65,
     backgroundColor: '#fff',
@@ -27,8 +26,21 @@ const styles = {
 
 export default class Navbar extends Component {
   render() {
+    let lastScrollTop = 0;
+    document.addEventListener('scroll', () => {
+      const offsetTop = window.pageYOffset || document.scrollingElement.scrollTop;
+      if (offsetTop > lastScrollTop && offsetTop > 83) {
+        document.getElementById('navbar').classList.remove('show-nav');
+        document.getElementById('navbar').classList.add('hide-nav');
+      } else {
+        document.getElementById('navbar').classList.remove('hide-nav');
+        document.getElementById('navbar').classList.add('show-nav');
+      }
+      lastScrollTop = offsetTop;
+    }, false);
+
     return (
-      <div className="navbar" style={styles.navbar}>
+      <div id="navbar" className="show-nav" style={styles.navbar}>
         <div className="nav-content" style={styles.navContent}>
           <div className="nav-brand">
             <Snapper />
