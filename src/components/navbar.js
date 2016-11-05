@@ -29,7 +29,7 @@ export default class Navbar extends Component {
     let lastScrollTop = 0;
     document.addEventListener('scroll', () => {
       const offsetTop = window.pageYOffset || document.scrollingElement.scrollTop;
-      if (offsetTop > lastScrollTop && offsetTop > 83) {
+      if (offsetTop > lastScrollTop && offsetTop > 67) {
         document.getElementById('navbar').classList.remove('show-nav');
         document.getElementById('navbar').classList.add('hide-nav');
       } else {
