@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-const me1 = '../public/imgs/me1.jpg';
-const me2 = '../public/imgs/me2.jpg';
-const me3 = '../public/imgs/me3.jpg';
+const me1 = '../../public/imgs/me1.jpg';
+// const me2 = '../../public/imgs/me2.jpg';
+// const me3 = '../../public/imgs/me3.jpg';
 
 const styles = {
   snapper: {
-    height: 60,
-    width: 60,
+    height: 70,
+    width: 70,
     borderRadius: '50%'
   }
 }
@@ -25,7 +25,7 @@ export default class Snapper extends Component {
 
 
   renderSnap(number) {
-    return <img style={styles.snapper} src={require(`../public/imgs/me${number}.jpg`)} alt="me" />
+    return <img style={styles.snapper} src={require(`../../public/imgs/me${number}.jpg`)} alt="me" />
   }
 
   render() {
