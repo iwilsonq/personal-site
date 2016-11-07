@@ -5,7 +5,53 @@ export default class Skills extends Component {
     return (
       <div className="skills container">
         <h1>Skills component</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className="skills-container">
+          <div className="skill-row">
+            <div className="skill">
+              <span>JavaScript
+                <img id="javascript-logo" className="skill-logo" src={require('../../public/imgs/Javascript.png')} alt="html"/>
+              </span>
+            </div>
+            <div className="skill">
+              <span>HTML
+                <img id="html5-logo" className="skill-logo" src={require('../../public/imgs/html5.png')} alt="html"/>
+              </span>
+
+            </div>
+            <div className="skill">
+              <span>CSS (SASS)
+                <img id="sass-logo" className="skill-logo" src={require('../../public/imgs/sass.svg')} alt="html"/>
+              </span>
+            </div>
+            <div className="skill">
+              <span>ReactJS
+                <img id="react-logo" className="skill-logo" src={require('../../public/imgs/reactjs.png')} alt="html"/>
+              </span>
+            </div>
+          </div>
+          <div className="skill-row">
+            <div className="skill">
+              <span>Github
+                <img id="github-logo" className="skill-logo" src={require('../../public/imgs/github.png')} alt="html"/>
+              </span>
+            </div>
+            <div className="skill">
+              <span>Electron
+                <img id="electron-logo" className="skill-logo" src={require('../../public/imgs/electron.png')} alt="html"/>
+              </span>
+            </div>
+            <div className="skill">
+              <span>NodeJS
+                <img id="node-logo" className="skill-logo" src={require('../../public/imgs/nodejs.png')} alt="html"/>
+              </span>
+            </div>
+            <div className="skill">
+              <span>REST
+                <img id="rest-logo" className="skill-logo" src={require('../../public/imgs/rest-api.png')} alt="html"/>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
