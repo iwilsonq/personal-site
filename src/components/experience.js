@@ -5,7 +5,20 @@ export default class Experience extends Component {
     return (
       <div className="experience container">
         <h1>Experience component</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className="experience-content">
+          <div className="row-experience">
+            <img className="image-pirashield" src={require('../../public/imgs/pirashield.png')} />
+            <p className="p-pirashield">
+              PiraShield is a technology solution that scans the web for copyright infringements and then submits them in order to have links to pirated digital content removed. Since I joined them I have worked on a variety of projects including a google scanner, a presentation generator, and the landing page.
+            </p>
+          </div>
+          <div className="row-experience">
+            <p className="p-arobooks">
+              Arobooks is a platform that allows students on college campuses to buy and sell textbooks from each other. The intent was to save money between students as well as foster student-to-student interacts in a sort of craiglist-esque fashion. This was my first real team project in web development so I got to learn a ton about team platforms like Slack and Trello.
+            </p>
+            <img className="image-arobooks" src={require('../../public/imgs/arobooks.png')} />
+          </div>
+        </div>
       </div>
     );
   }
