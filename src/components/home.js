@@ -5,7 +5,7 @@ import Skills from '../components/skills';
 import Projects from '../components/projects';
 import Experience from '../components/experience';
 
-import './home.sass';
+import '../../public/styles/home.sass';
 
 export default class Home extends Component {
   render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../components/navbar';
 import Content from './content';
 import Footer from '../components/footer';
-import './app.css';
+import '../../public/styles/reset.css';
 
 export default class App extends Component {
   render() {
